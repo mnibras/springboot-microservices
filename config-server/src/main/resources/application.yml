@@ -8,5 +8,6 @@ spring:
         config:
             server:
                 git:
-                    uri: https://github.com/nibras-sameeh/spring-config-repo
+                    uri: https://github.com/mnibras/microservices-config-repo
+                    default-label: master
                     clone-on-start: true
