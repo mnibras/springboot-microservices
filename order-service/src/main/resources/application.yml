@@ -15,6 +15,22 @@ spring:
             ddl-auto: update
     config:
         import: configserver:http://localhost:9296
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issue: https://dev-65926783.okta.com/oauth2/default
+            client:
+                registration:
+                    internal-client:
+                        provider: okta
+                        authorizationGrantType: client_credentials
+                        scope: internal
+                        clientId: 0oa7xmcoa1U8yeRCG5d7
+                        clientSecret: FhUTcUkuldoWwA8hvEK1-HFbfd_15jZlMpde3oL
+                provider:
+                    okta:
+                        issuerUri: https://dev-65926783.okta.com/oauth2/default
 
 resilience4j:
     circuitbreaker:

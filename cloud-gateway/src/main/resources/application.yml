@@ -50,3 +50,6 @@ spring:
                             args:
                                 redis-rate-limiter.replenishRate: 1
                                 redis-rate-limiter.burstCapacity: 1
+
+# octa username: mohamednibras111@gmail.com
+# octa password: Qwerty@1994
